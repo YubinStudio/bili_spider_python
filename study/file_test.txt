@@ -1,0 +1,13 @@
+case ydlbdm
+when '100' then '大工业用电'
+when '200' then '普通工业'
+when '260' then '非工业'
+when '300' then '商业'
+when '400' then '趸售'
+when '500' then '居民生活'
+when '600' then '非居民'
+when '700' then '农业生产'
+when '800' then '农业排灌'
+when '900' then '其它用电'
+else ''
+end as ydlb,

@@ -1,0 +1,12 @@
+use test_db;
+create table if not exists anime_info(
+	 `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'id',
+    anime_title varchar(256) comment '番剧名称',
+    anime_order varchar(256) comment '追番人数',
+    anime_badge varchar(256) comment '番剧类型',
+    anime_index varchar(256) comment '番剧索引',
+    anime_link varchar(256) comment '番剧链接',
+    image_url varchar(256) comment '封面链接',
+    update_time datetime comment '更新时间',
+    PRIMARY KEY (`id`) USING BTREE
+) comment ='番剧索引信息';
